@@ -19,18 +19,24 @@ class Details extends StatelessWidget {
             icon: Image.asset("assets/back.png")),
         leadingWidth: 100,
         actions: [
-          Image.asset(
-            'assets/bookmark.png',
-            width: 20,
-            height: 20,
+          InkWell(
+            child: Image.asset(
+              'assets/bookmark.png',
+              width: 20,
+              height: 20,
+            ),
+            onTap: (){},
           ),
           const SizedBox(
             width: 24,
           ),
-          Image.asset(
-            'assets/share.png',
-            width: 20,
-            height: 20,
+          InkWell(
+            child: Image.asset(
+              'assets/share.png',
+              width: 20,
+              height: 20,
+            ),
+            onTap: (){},
           ),
           const SizedBox(
             width: 40,

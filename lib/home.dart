@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:indicultre/screens/all_nft.dart';
 import 'package:indicultre/screens/homepage.dart';
 import 'package:indicultre/screens/profile.dart';
 
@@ -56,7 +57,7 @@ class _HomeState extends State<Home> {
 
   final pages = [
     const HomePage(),
-    const Placeholder(),
+    const All(),
     const Profile(),
   ];
 

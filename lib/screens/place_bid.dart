@@ -72,7 +72,7 @@ class PlaceBid extends StatelessWidget {
                                         inputFormatters: <TextInputFormatter>[
                                           FilteringTextInputFormatter.digitsOnly
                                         ], // Only numbers can be entered
-                                      ),
+                                      ),                                      
                                     ),
                                   ),
                                    Padding(

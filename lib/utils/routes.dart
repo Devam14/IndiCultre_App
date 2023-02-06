@@ -5,4 +5,6 @@ class MyRoutes{
   static String profile = "/profile";
   static String details = "/details";
   static String bid = "/bid";
+  static String all = "/all";
+
 }

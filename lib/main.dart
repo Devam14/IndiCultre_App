@@ -7,6 +7,7 @@ import 'package:indicultre/screens/connectwallet.dart';
 import 'package:indicultre/screens/profile.dart';
 import 'package:indicultre/screens/details.dart';
 import 'package:indicultre/screens/place_bid.dart';
+import 'package:indicultre/screens/all_nft.dart';
 
 
 void main(){
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         MyRoutes.wallet:(context)=>const ConnectWallet(),
         MyRoutes.profile:(context)=> const Profile(), 
         MyRoutes.details:(context)=>const Details(),
+        MyRoutes.all:(context)=>const All(),
       },
     );
   }
