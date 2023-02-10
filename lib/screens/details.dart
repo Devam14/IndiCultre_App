@@ -235,7 +235,7 @@ class Details extends StatelessWidget {
                               fontSize: 12,
                               color: Color.fromARGB(255, 0, 0, 0)),
                         ),
-                        Text('0.2 ETH',
+                        Text('0.2 MATIC',
                             style: TextStyle(
                                 fontWeight: FontWeight.w700,
                                 fontSize: 14,
@@ -298,6 +298,11 @@ class Details extends StatelessWidget {
                 onPressed: () {
                   showModalBottomSheet<void>(
                     context: context,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.vertical(
+                        top: Radius.circular(24),
+                      ),
+                    ),
                     builder: (BuildContext context) {
                       return SizedBox(
                         height: 650,
@@ -307,7 +312,7 @@ class Details extends StatelessWidget {
                               children: [
                                   
                                   Padding(
-                                        padding: const EdgeInsets.only(left: 40,top: 10,right: 10),
+                                        padding: const EdgeInsets.only(left: 40,top: 30,right: 10),
                                         child:  RichText(
                                           text: TextSpan(
                                             children: const <TextSpan>[
@@ -352,19 +357,22 @@ class Details extends StatelessWidget {
                                         child: Padding(
                                           padding: const EdgeInsets.only(top: 0,left: 30,bottom: 0),
                                           child: TextField(
+                                            decoration: InputDecoration(
+                                              border: InputBorder.none,
+                                            ),
                                             keyboardType: TextInputType.number,
                                             inputFormatters: <TextInputFormatter>[
                                               FilteringTextInputFormatter.digitsOnly
-                                            ], // Only numbers can be entered
+                                            ], 
                                           ),
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(left: 40,top: 20,right: 0,bottom: 20),
+                                        padding: const EdgeInsets.only(left: 30,top: 20,right: 0,bottom: 20),
                                         child: RichText(
                                           text: TextSpan(
                                             children: const <TextSpan>[
-                                              TextSpan(text: 'ETH', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 12,color:Color.fromARGB(255, 0, 0, 0))),
+                                              TextSpan(text: 'MATIC', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 12,color:Color.fromARGB(255, 0, 0, 0))),
                                               ],
                                             ),
                                         ),
@@ -388,11 +396,11 @@ class Details extends StatelessWidget {
                                         ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 30,right: 0,bottom: 15,left: 150),
+                                    padding: const EdgeInsets.only(top: 30,right: 0,bottom: 15,left: 140),
                                     child: RichText(
                                           text: TextSpan(
                                             children: const <TextSpan>[
-                                              TextSpan(text: '8.498 ETH', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 12,color:Color.fromARGB(255, 0, 0, 0))),
+                                              TextSpan(text: '8.498 MATIC', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 12,color:Color.fromARGB(255, 0, 0, 0))),
                                               ],
                                             ),
                                         ),
@@ -419,11 +427,11 @@ class Details extends StatelessWidget {
                                         ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 15,right: 0,bottom: 15,left: 180),
+                                    padding: const EdgeInsets.only(top: 15,right: 0,bottom: 15,left: 170),
                                     child: RichText(
                                           text: TextSpan(
                                             children: const <TextSpan>[
-                                              TextSpan(text: '0 ETH', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 12,color:Color.fromARGB(255, 0, 0, 0))),
+                                              TextSpan(text: '0 MATIC', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 12,color:Color.fromARGB(255, 0, 0, 0))),
                                               ],
                                             ),
                                         ),
@@ -450,11 +458,11 @@ class Details extends StatelessWidget {
                                         ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 15,right: 0,bottom: 10,left: 150),
+                                    padding: const EdgeInsets.only(top: 15,right: 0,bottom: 10,left: 140),
                                     child: RichText(
                                           text: TextSpan(
                                             children: const <TextSpan>[
-                                              TextSpan(text: '0 ETH', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 12,color:Color.fromARGB(255, 0, 0, 0))),
+                                              TextSpan(text: '0 MATIC', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 12,color:Color.fromARGB(255, 0, 0, 0))),
                                               ],
                                             ),
                                         ),
@@ -464,16 +472,25 @@ class Details extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.only(left: 30,right: 30,top: 40,bottom: 10),
                                     child: ElevatedButton(
+                                      style: ButtonStyle(
+                                        backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 121, 85, 72)),
+                                        padding: MaterialStateProperty.all(
+                                            const EdgeInsets.symmetric(
+                                                horizontal: 100, vertical: 13)),
+                                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.circular(30.0),
+                                            side: const BorderSide(color: Colors.brown))),
+                                      ),
                                       child: RichText(
                                         text: TextSpan(
                                               children: const <TextSpan>[
-                                                TextSpan(text: '                         Place a bid                         ', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 14,color:Color.fromARGB(255, 255, 255, 255))),
+                                                TextSpan(text: 'Place a bid', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 14,color:Color.fromARGB(255, 255, 255, 255))),
                                                 ],
                                               ),
                                           ),
-                                          style: ButtonStyle(
-                                            backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 190, 83, 0)),
-                                            ),
+                                          // style: ButtonStyle(
+                                          //   backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 190, 83, 0)),
+                                          //   ),
                                       onPressed: () {},
                                     ),
                             )

@@ -39,6 +39,11 @@ class HomePage extends StatelessWidget {
                   onPressed: () {
                     showModalBottomSheet<void>(
                       context: context,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.vertical(
+                          top: Radius.circular(24),
+                        ),
+                    ),
                       builder: (BuildContext context) => ConnectWallet(),
                     );
                   },

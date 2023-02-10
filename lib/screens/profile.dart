@@ -167,7 +167,7 @@ class Profile extends StatelessWidget {
                   Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(top: 20,left: 55,bottom: 20),
+                        padding: const EdgeInsets.only(top: 20,left: 45,bottom: 20),
                         child:  RichText(
                           text: TextSpan(
                             children: const <TextSpan>[
@@ -177,7 +177,7 @@ class Profile extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 55,bottom: 20),
+                        padding: const EdgeInsets.only(left: 45,bottom: 20),
                         child:  RichText(
                           text: TextSpan(
                             children: const <TextSpan>[
@@ -263,26 +263,27 @@ class Profile extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 50,right: 50,bottom: 10),
+                padding: const EdgeInsets.only(left: 30,right: 30,bottom: 10),
                   child: ElevatedButton(
-                    child: Padding(
-                      padding: const EdgeInsets.all(13.0),
-                      child: RichText(
-                        text: TextSpan(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 121, 85, 72)),
+                    padding: MaterialStateProperty.all(
+                        const EdgeInsets.symmetric(
+                            horizontal: 120, vertical: 13)),
+                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30.0),
+                        side: const BorderSide(color: Colors.brown))),
+                  ),
+                  child: RichText(
+                    text: TextSpan(
                           children: const <TextSpan>[
-                            TextSpan(text: '                           Follow                              ', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 14,color:Color.fromARGB(255, 255, 255, 255))),
+                            TextSpan(text: 'Follow', style: TextStyle(fontWeight: FontWeight.w500,fontSize: 14,color:Color.fromARGB(255, 255, 255, 255))),
                             ],
                           ),
-                        ),
-                    ),
-                        style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 190, 83, 0)),
-                        shape: MaterialStateProperty.all(
-                          RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                        ),
-                        ),
+                      ),
+                      // style: ButtonStyle(
+                      //   backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 190, 83, 0)),
+                      //   ),
                   onPressed: () {},
                 ),
               ),

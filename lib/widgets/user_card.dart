@@ -36,7 +36,7 @@ class UserCard extends StatelessWidget {
             height: 8,
           ),
           const Text(
-            "2.822 ETH",
+            "2.822 MATIC",
             style: TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w500,

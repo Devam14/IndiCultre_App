@@ -53,12 +53,15 @@ class ConnectWallet extends StatelessWidget {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(top: 32,left: 100,bottom: 8),
-                                  child:  RichText(
-                                    text: TextSpan(
-                                      children: const <TextSpan>[
-                                        TextSpan(text: ' Connect', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 13,color:Color.fromARGB(255, 192, 135, 49))),
-                                      ],
+                                  child:  InkWell(
+                                    child: RichText(
+                                      text: TextSpan(
+                                        children: const <TextSpan>[
+                                          TextSpan(text: ' Connect', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 13,color:Color.fromARGB(255, 192, 135, 49))),
+                                        ],
+                                      ),
                                     ),
+                                    onTap: () {},
                                   ),
                                 ),
                               ],
@@ -88,12 +91,15 @@ class ConnectWallet extends StatelessWidget {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(top: 10,left: 65,bottom: 8),
-                                  child:  RichText(
-                                    text: TextSpan(
-                                      children: const <TextSpan>[
-                                        TextSpan(text: ' Connect', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 13,color:Color.fromARGB(255, 192, 135, 49))),
-                                      ],
+                                  child:  InkWell(
+                                    child: RichText(
+                                      text: TextSpan(
+                                        children: const <TextSpan>[
+                                          TextSpan(text: ' Connect', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 13,color:Color.fromARGB(255, 192, 135, 49))),
+                                        ],
+                                      ),
                                     ),
+                                    onTap: (){},
                                   ),
                                 ),
                               ],
@@ -123,12 +129,15 @@ class ConnectWallet extends StatelessWidget {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(top: 10,left: 75,bottom: 8),
-                                  child:  RichText(
-                                    text: TextSpan(
-                                      children: const <TextSpan>[
-                                        TextSpan(text: ' Connect', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 13,color:Color.fromARGB(255, 192, 135, 49))),
-                                      ],
+                                  child:  InkWell(
+                                    child: RichText(
+                                      text: TextSpan(
+                                        children: const <TextSpan>[
+                                          TextSpan(text: ' Connect', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 13,color:Color.fromARGB(255, 192, 135, 49))),
+                                        ],
+                                      ),
                                     ),
+                                    onTap: (){},
                                   ),
                                 ),
                               ],
@@ -158,12 +167,15 @@ class ConnectWallet extends StatelessWidget {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(top: 10,left: 105,bottom: 8),
-                                  child:  RichText(
-                                    text: TextSpan(
-                                      children: const <TextSpan>[
-                                        TextSpan(text: ' Connect', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 13,color:Color.fromARGB(255, 192, 135, 49))),
-                                      ],
+                                  child:  InkWell(
+                                    child: RichText(
+                                      text: TextSpan(
+                                        children: const <TextSpan>[
+                                          TextSpan(text: ' Connect', style: TextStyle(fontWeight: FontWeight.w600,fontSize: 13,color:Color.fromARGB(255, 192, 135, 49))),
+                                        ],
+                                      ),
                                     ),
+                                    onTap: (){},
                                   ),
                                 ),
                               ],

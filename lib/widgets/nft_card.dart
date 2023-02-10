@@ -21,7 +21,7 @@ class NFTCard extends StatelessWidget {
           ),
           color: Colors.white,
           border: Border.all(
-            color: const Color(0xffF6F6F6),
+            color: Color.fromARGB(255, 156, 148, 148).withOpacity(0.5),
             width: 0,
           ),
         ),
